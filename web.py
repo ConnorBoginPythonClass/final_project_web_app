@@ -1,11 +1,19 @@
 from flask import Flask, render_template, request
-from googlefinance import getQuotes
+import giphypop
+g = giphypop.Giphy()
 app = Flask(__name__)
 
-def get_stock_price(ticker):
-    quotes = getQuotes(ticker)
-    price = quotes [0]['LastTradePrice']
-    return "The price of {} is {}".format(ticker, price)
+def get_gif(responses):
+    # g = giphypop.giphy()
+    responses = g.search('cats') # returns a list of objects
+    for response in responses:
+    	print(response.media_url)
+    	print(response.url)
+
+# http://media0.giphy.com/media/26uf9IAZN7JvvYbwA/giphy.gif # Media (image) Url
+# http://giphy.com/gifs/love-cat-cats-26uf9IAZN7JvvYbwA # GIF Url
+# http://media1.giphy.com/media/26uf5hiFbD0DdZdGo/giphy.gif
+# http://giphy.com/gifs/cat-judgemental-judgey-26uf5hiFbD0DdZdGo
 
 @app.route('/')
 def index():
@@ -19,9 +27,8 @@ def about():
 
 @app.route('/results')
 def results():
-    stock = request.values.get('stock')
-    price = get_stock_price(stock)
-    gifs = ["One", "Two", "Three"]
-    return render_template('results.html', price=price, gifs=gifs)
+    gif = request.values.get('term')
+    responses = get_gif(gif)
+    return render_template('results.html', responses=responses)
 
 app.run(debug=True)
