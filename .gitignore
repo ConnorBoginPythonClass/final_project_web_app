@@ -1,0 +1,108 @@
+# Byte-compiled / optimized / DLL files 
+2 __pycache__/ 
+3 *.py[cod] 
+4 *$py.class 
+5 
+ 
+6 # C extensions 
+7 *.so 
+8 
+ 
+9 # Distribution / packaging 
+10 .Python 
+11 env/ 
+12 build/ 
+13 develop-eggs/ 
+14 dist/ 
+15 downloads/ 
+16 eggs/ 
+17 .eggs/ 
+18 lib/ 
+19 lib64/ 
+20 parts/ 
+21 sdist/ 
+22 var/ 
+23 *.egg-info/ 
+24 .installed.cfg 
+25 *.egg 
+26 
+ 
+27 # PyInstaller 
+28 #  Usually these files are written by a python script from a template 
+29 #  before PyInstaller builds the exe, so as to inject date/other infos into it. 
+30 *.manifest 
+31 *.spec 
+32 
+ 
+33 # Installer logs 
+34 pip-log.txt 
+35 pip-delete-this-directory.txt 
+36 
+ 
+37 # Unit test / coverage reports 
+38 htmlcov/ 
+39 .tox/ 
+40 .coverage 
+41 .coverage.* 
+42 .cache 
+43 nosetests.xml 
+44 coverage.xml 
+45 *,cover 
+46 .hypothesis/ 
+47 
+ 
+48 # Translations 
+49 *.mo 
+50 *.pot 
+51 
+ 
+52 # Django stuff: 
+53 *.log 
+54 local_settings.py 
+55 
+ 
+56 # Flask stuff: 
+57 instance/ 
+58 .webassets-cache 
+59 
+ 
+60 # Scrapy stuff: 
+61 .scrapy 
+62 
+ 
+63 # Sphinx documentation 
+64 docs/_build/ 
+65 
+ 
+66 # PyBuilder 
+67 target/ 
+68 
+ 
+69 # IPython Notebook 
+70 .ipynb_checkpoints 
+71 
+ 
+72 # pyenv 
+73 .python-version 
+74 
+ 
+75 # celery beat schedule file 
+76 celerybeat-schedule 
+77 
+ 
+78 # dotenv 
+79 .env 
+80 
+ 
+81 # virtualenv 
+82 .venv/ 
+83 venv/ 
+84 ENV/ 
+85 
+ 
+86 # Spyder project settings 
+87 .spyderproject 
+88 
+ 
+89 # Rope project settings 
+90 .ropeproject 
