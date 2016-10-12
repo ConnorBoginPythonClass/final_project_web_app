@@ -4,6 +4,10 @@ import os
 g = giphypop.Giphy()
 app = Flask(__name__)
 
+# Kill lines 11 tp 13 and unlock lines 8 to 10 once the term entry has been set up
+# def get_gif(term):
+#     # g = giphypop.giphy()
+#     responses = g.search(term) # returns a list of objects
 def get_gif(responses):
     # g = giphypop.giphy()
     responses = g.search('cats') # returns a list of objects
